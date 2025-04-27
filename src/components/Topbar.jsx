@@ -1,5 +1,7 @@
 import { AppBar, Toolbar, Typography, IconButton, Box, Button } from '@mui/material';
 import { ArrowDropDown, Autorenew, HelpOutline, Notifications, NotificationsNone, Settings } from '@mui/icons-material'; 
+import logo from '../assets/logo.png';
+import imp from  '../assets/icons/import.png'
 
 const Topbar = () => {
   return (
@@ -7,7 +9,7 @@ const Topbar = () => {
     
       <Toolbar sx={{height:"80px" ,display:'flex',justifyItems:'center',alignItems:'center' ,gap:"20px"}}>
       <div style={{display:'flex',justifyItems:'center',alignItems:"flex-start",gap:"10px" ,}}>
-            <img src='src\assets\logo.png' height={"48px"}/>
+            <img src={logo} height={"48px"}/>
             <p style={{color:'#666666', fontSize:'18px' , fontWeight:'500'}}>Admin Area</p>
       </div>
 
@@ -16,7 +18,7 @@ const Topbar = () => {
         </Typography>
 
         <button style={{backgroundColor:'#7D83FF',display:'flex',justifyContent:'center',alignItems:'center' ,gap:'10px',borderRadius:'8px',color:'#FFFFFF',border:'none' , fontWeight:'300',fontSize:'14px' ,padding: '12px 13px'}}>
-        <img src='src\assets\icons\import.png' height={'16px'}/>
+        <img src={imp} height={'16px'}/>
            Import Bulk Employee
         </button>
        
@@ -34,7 +36,7 @@ const Topbar = () => {
         </Box>
         <Box sx={{backgroundColor:'#F6F6F6',padding:'8px',borderRadius:'14px',display:'flex',justifyItems:'center',alignItems:'center',gap:'10px'}}>
             <div style={{backgroundColor:'white',padding:'6px',borderRadius:'10px',display:'flex',justifyItems:'center',alignItems:'center'}}>
-                <img src='src\assets\icons\jivoCare.png' height={'20px'} />
+                <img src={logo} height={'20px'} />
             </div>
 
             <Typography > Raj Kaushal</Typography>

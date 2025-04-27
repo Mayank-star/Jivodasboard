@@ -3,6 +3,13 @@ import { Box, Typography, Button, IconButton, Grid, Card, CardContent, Divider }
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import AccessTimeIcon from '@mui/icons-material/AccessTime'; 
 import { NotificationsNone } from '@mui/icons-material';
+import enggLogo from "../assets/enggLogo.png"
+import clock from "../assets/clock.png"
+import cube from "../assets/icons/cube.png"
+import upload from "../assets/icons/upload.png"
+import doctorbag from "../assets/icons/doctorBag.png"
+import paper from "../assets/icons/paper.png"
+
 
 const Details = () => {
   return (
@@ -10,7 +17,7 @@ const Details = () => {
         
             <Card sx={{ flex: 1, display: 'flex', alignItems: 'center', p: 2, minWidth: 300 }}>
                 <Box component="img"
-                    src="src\assets\enggLogo.png"
+                    src={enggLogo}
                     alt="Company Logo"
                     sx={{ width: 150, height: 150, mr: 2 }}
                 />
@@ -44,7 +51,7 @@ const Details = () => {
 
                 <Box sx={{ ml: 'auto' }}>
                     <Box component="img"
-                    src="src\assets\clock.png"
+                    src={clock}
                     alt="Clock"
                     sx={{ width: 119, height: 129 }}
                     />
@@ -57,7 +64,7 @@ const Details = () => {
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center',gap:'10px' }}>
                 <Box component="img"
-                src="src\assets\icons\cube.png"
+                src={cube}
                 alt="Cube icon"
                 sx={{ width: 36, height: 36, }}
                 />
@@ -67,11 +74,11 @@ const Details = () => {
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center',gap:'10px' }}>
                     <button style={{border:'none',color:'white', fontSize:'12px',fontWeight:'500',padding:'8px 10px', display: 'flex', justifyContent: 'flex-start', alignItems: 'center',gap:'10px',borderRadius:'4px',backgroundColor:'#7D83FF'}}>
-                    <img src='src\assets\icons\upload.png' height="12px"/>
+                    <img src={upload} height="12px"/>
                     Upgrade
                     </button>
                     <button style={{border:'none',color:'black', fontSize:'12px',fontWeight:'500',padding:'8px 10px', display: 'flex', justifyContent: 'flex-start', alignItems: 'center',gap:'10px',borderRadius:'4px',backgroundColor:'white'}}>
-                    <img src='src\assets\icons\cube.png' height="15px"/>
+                    <img src={cube} height="15px"/>
                     View Package Plans
                     </button>
                 
@@ -101,7 +108,7 @@ const Details = () => {
                 </Grid>
 
                 <Box component="img"
-                src="src\assets\icons\doctorBag.png"
+                src={doctorbag}
                 alt="doctorBag icon"
                 sx={{ width: 63, height: 63, }}
                 />
@@ -121,7 +128,7 @@ const Details = () => {
                 <Grid item xs={6}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                 <Box component="img"
-                src="src\assets\icons\cube.png"
+                src={cube}
                 alt="Cube icon"
                 sx={{ width: 23, height: 22, mr:1  }}
                 />
@@ -143,7 +150,7 @@ const Details = () => {
                 </Box>
                 </Grid>
                 <Box component="img"
-                src="src\assets\icons\paper.png"
+                src={paper}
                 alt="paper icon"
                 sx={{ width: 63, height: 63, }}
                 />
